@@ -1,12 +1,16 @@
-# figma-make-app
+# Hannah John - Portfolio
 
-React + Vite + Tailwind CSS project running inside Figma Make.
+React + Vite + Tailwind CSS portfolio website.
 
 ## Development Server
 
-A Vite development server is **already running** on `$PORT` (default 8443). You don't need to start it manually.
+To start the development server:
 
-- Preview URL: The user can access the running app through the preview panel
+```bash
+npm run dev
+```
+
+- The app will be available at `http://localhost:5173`
 - Hot reload: Changes to source files are reflected immediately
 
 ## Project Structure
