@@ -1,5 +1,12 @@
 import { useState, useEffect, useRef } from 'react'
 
+// ── Image Assets ───────────────────────────────────────────────────────────
+// TODO: Add your photos to src/assets/images/ with these exact filenames:
+import heroClimbingImg from '@/assets/images/hero-climbing.jpg'      // Hero section - main photo (600×800px)
+import heroMountainImg from '@/assets/images/hero-mountain.jpg'      // Hero section - small photo (320×260px)
+import aboutPortraitImg from '@/assets/images/about-portrait.jpg'    // About section - main photo (480×580px)
+import aboutOutdoorsImg from '@/assets/images/about-outdoors.jpg'    // About section - secondary photo (420×380px)
+
 // ── Palette ────────────────────────────────────────────────────────────────
 const C = {
   parchment: '#F2EDE3',
@@ -471,8 +478,9 @@ export default function App() {
               clipPath: 'polygon(0 0, 100% 3%, 97% 100%, 2% 97%)',
             }}
           >
+            {/* HERO SECTION - Main climbing photo (large portrait, right side of hero) */}
             <img
-              src="https://images.unsplash.com/photo-1577434150790-3bfe143fe4f2?w=600&h=800&fit=crop&auto=format"
+              src={heroClimbingImg}
               alt="Rock climbing"
               style={{
                 width: '100%',
@@ -502,8 +510,9 @@ export default function App() {
               zIndex: 7,
             }}
           >
+            {/* HERO SECTION - Secondary mountain photo (small landscape, bottom-left of main photo) */}
             <img
-              src="https://images.unsplash.com/photo-1507034589631-9433cc6bc453?w=320&h=260&fit=crop&auto=format"
+              src={heroMountainImg}
               alt="Mountain"
               style={{
                 width: '100%',
@@ -897,8 +906,9 @@ export default function App() {
                 zIndex: 2,
               }}
             >
+              {/* ABOUT SECTION - Main portrait photo (large portrait, left side of about section) */}
               <img
-                src="https://images.unsplash.com/photo-1628620835051-8f40f48c928d?w=480&h=580&fit=crop&auto=format"
+                src={aboutPortraitImg}
                 alt="Portrait"
                 style={{
                   width: '100%',
@@ -928,8 +938,9 @@ export default function App() {
                 border: `7px solid ${C.cream}`,
               }}
             >
+              {/* ABOUT SECTION - Outdoor activity photo (landscape, bottom-right of about collage) */}
               <img
-                src="https://images.unsplash.com/photo-1578886141033-b9f066572135?w=420&h=380&fit=crop&auto=format"
+                src={aboutOutdoorsImg}
                 alt="Hiking outdoors"
                 style={{
                   width: '100%',
