@@ -5,7 +5,7 @@ import path from 'node:path'
 
 // Vite config — https://vitejs.dev/config/
 export default defineConfig({
-  base: '/MyPortfolio/',
+  base: '/',
   build: {
     sourcemap: false,
     minify: true,
