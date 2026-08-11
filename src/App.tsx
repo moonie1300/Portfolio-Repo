@@ -2,8 +2,8 @@ import { useState, useEffect, useRef } from 'react'
 
 // ── Image Assets ───────────────────────────────────────────────────────────
 // TODO: Add your photos to src/assets/images/ with these exact filenames:
-import heroClimbingImg from '@/assets/images/hero-climbing.jpg'      // Hero section - main photo (600×800px)
-import heroMountainImg from '@/assets/images/hero-mountain.jpg'      // Hero section - small photo (320×260px)
+import bigHeroImg from '@/assets/images/big-hero.jpg'      // Hero section - main photo (600×800px)
+import smallHeroImg from '@/assets/images/small-hero.jpg'      // Hero section - small photo (320×260px)
 import aboutPortraitImg from '@/assets/images/about-portrait.jpg'    // About section - main photo (480×580px)
 import aboutOutdoorsImg from '@/assets/images/about-outdoors.jpg'    // About section - secondary photo (420×380px)
 
@@ -480,7 +480,7 @@ export default function App() {
           >
             {/* HERO SECTION - Main climbing photo (large portrait, right side of hero) */}
             <img
-              src={heroClimbingImg}
+              src={bigHeroImg}
               alt="Rock climbing"
               style={{
                 width: '100%',
@@ -512,7 +512,7 @@ export default function App() {
           >
             {/* HERO SECTION - Secondary mountain photo (small landscape, bottom-left of main photo) */}
             <img
-              src={heroMountainImg}
+              src={smallHeroImg}
               alt="Mountain"
               style={{
                 width: '100%',

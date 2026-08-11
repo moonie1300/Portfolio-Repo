@@ -1,24 +1,31 @@
-# Portfolio Images
+## My portfolio 
+# is a little about me and my journey in tech so far
+I'm grateful to have a great many experiences and a place to document them myself.
 
-Add your personal photos here with these exact filenames:
+# For running
+- npm run dev
+
+# Portfolio Images
+All images are taken from Pinterest from other artists and credited
 
 ## Required Images:
+Hannah pls update all the photos with stuff you made
 
 ### Hero Section (Top of page)
-- **hero-climbing.jpg** - Main rock climbing photo
+- **big-hero.jpg**
   - Recommended size: 600×800px (portrait orientation)
   - Shows in: Hero section, main photo card on right side
 
-- **hero-mountain.jpg** - Secondary mountain/outdoor photo
+- **small-hero.jpg**
   - Recommended size: 320×260px (landscape orientation)
   - Shows in: Hero section, smaller photo bottom-left of main photo
 
 ### About Section (Middle of page)
-- **about-portrait.jpg** - Professional/personal portrait
+- **about-portrait.jpg**
   - Recommended size: 480×580px (portrait orientation)
   - Shows in: About section, primary photo on left
 
-- **about-outdoors.jpg** - Hiking/outdoor activity photo
+- **about-outdoors.jpg**
   - Recommended size: 420×380px (landscape orientation)
   - Shows in: About section, secondary photo bottom-right
 

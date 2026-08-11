@@ -22,13 +22,13 @@ Your portfolio uses 4 images in 2 main sections. Replace the placeholder files i
 └─────────────────────────────────────────────────┘
 ```
 
-**hero-climbing.jpg**
+**big-hero.jpg**
 - Location: Hero section, main photo card
 - Size: 600×800px (portrait orientation)
 - Purpose: Showcase personality/activity (climbing, outdoor, active)
 - Filters applied: saturate(0.65) sepia(0.12)
 
-**hero-mountain.jpg**
+**small-hero.jpg**
 - Location: Hero section, smaller overlapping photo
 - Size: 320×260px (landscape orientation)
 - Purpose: Secondary personality photo
