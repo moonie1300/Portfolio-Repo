@@ -633,9 +633,10 @@ export default function App() {
               marginBottom: '36px',
             }}
           >
-            Final-year engineer who builds things that work — from PLC logic for battery
-            management systems to full-stack web apps and ML pipelines. I care about
-            aesthetics as much as algorithms.
+            Final-year engineer who learns by building, breaking, and debugging - I’m naturally 
+            curious and enjoy turning ideas into something real. I care about the details, 
+            whether that’s how something works, how it looks, or how it feels to use.
+
           </p>
 
           {/* Currently strip */}
@@ -1018,6 +1019,7 @@ export default function App() {
               engineer by degree,
               <br />
               <span style={{ color: C.sage }}>curious by nature.</span>
+              <SectionLabel label="(almost by degree)" color={C.rose} />
             </h2>
 
             <p
@@ -1028,7 +1030,9 @@ export default function App() {
                 marginBottom: '18px',
               }}
             >
-              {"I'm Hannah — a final-year Software & Robotics Engineering student at QUT, currently building a commercial battery management system at CHARG Energy. I work across the stack: from PLC ladder logic and Modbus TCP comms to React frontends and ML pipelines."}
+              I'm Hannah — a final-year Software & Robotics Engineering student at QUT, currently 
+              building a commercial battery management system at CHARG Energy. I work across the 
+              stack: from PLC ladder logic and Modbus TCP comms to React frontends and ML pipelines.
             </p>
             <p
               style={{
@@ -1038,18 +1042,21 @@ export default function App() {
                 marginBottom: '32px',
               }}
             >
-              Outside of engineering, my Indian background, love of aesthetics, and life on the wall at the climbing gym shape how I see and build things. I care deeply about what something looks like as much as how it works.
+              I like having a mix of technical and creative things in my life. When I'm not 
+              at my computer, there's a good chance I'm climbing something. Those parts of my life find 
+              their way into my work too. I like experimenting, paying attention to the small things, 
+              and leaving things a little better than I found them.
             </p>
 
             {/* Interest stickers */}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '32px' }}>
               {[
-                { label: '🧗 rock climbing', bg: C.sageLight, r: -2 },
+                { label: '🧗 bouldering', bg: C.sageLight, r: -2 },
                 { label: '🎮 gaming', bg: C.blush, r: 1.5 },
                 { label: '🎹 piano', bg: C.roseLight, r: -1.5 },
-                { label: '✨ aesthetics', bg: '#E2DDD5', r: 2 },
+                { label: '✨ design', bg: '#E2DDD5', r: 2 },
                 { label: '🤖 robotics', bg: C.sageLight, r: -2.5 },
-                { label: '🪷 indian roots', bg: C.roseLight, r: 1 },
+                { label: '💻 coding', bg: C.roseLight, r: 1 },
               ].map(({ label, bg, r }) => (
                 <Sticker key={label} bg={bg} rotate={r}>
                   {label}
@@ -1567,25 +1574,25 @@ export default function App() {
                 label: 'Programming Languages',
                 accent: C.sage,
                 bg: C.sageLight,
-                skills: ['JavaScript', 'Python', 'C / C++', 'HTML & CSS', 'SQL'],
+                skills: ['JavaScript / TypeScript', 'Python', 'C / C++', 'HTML & CSS', 'SQL'],
               },
               {
                 label: 'Frameworks & Dev Tools',
                 accent: C.rose,
                 bg: C.roseLight,
-                skills: ['React', 'Vite', 'REST APIs', 'Git', 'GitHub', 'Linux', 'MySQL', 'VS Code', 'Cursor'],
+                skills: ['React', 'Vite', 'REST APIs', 'Git/GitHub', 'Linux', 'MySQL', 'VS Code', 'Cursor', 'Docker'],
               },
               {
                 label: 'Industrial & Embedded',
                 accent: '#9B8C6A',
                 bg: '#E6DFD3',
-                skills: ['Omron PLCs', 'CX-Programmer', 'Modbus TCP', 'FreeRTOS', 'Embedded Systems', 'AutoCAD'],
+                skills: ['PLC Programming', 'Modbus TCP', 'FreeRTOS', 'Embedded Systems', 'Revolution Pi'],
               },
               {
                 label: 'ML & Data Science',
                 accent: '#5E7A8A',
                 bg: '#D0DDE4',
-                skills: ['TensorFlow', 'Keras', 'PyTorch', 'Siamese CNN', 'Transformers', 'scikit-learn'],
+                skills: ['PyTorch', 'TensorFlow/Keras', 'Transformers'],
               },
             ].map((cat, i) => (
               <div key={i}>
