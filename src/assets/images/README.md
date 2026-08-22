@@ -5,6 +5,10 @@ I'm grateful to have a great many experiences and a place to document them mysel
 # For running
 - npm run dev
 
+## Future implementations
+- create pop ups to go into more detail regarding selected work
+- can we turn these pop ups into a interactive notebook style?
+
 # Portfolio Images
 All images are taken from Pinterest from other artists and credited
 
