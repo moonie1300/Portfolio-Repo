@@ -67,6 +67,11 @@ body {
     display: flex !important;
   }
   
+  /* Add spacing between hero buttons and ticker */
+  .ticker-section {
+    margin-top: 48px !important;
+  }
+  
   .hero-inner {
     padding-right: 8% !important;
     padding-top: 120px !important;

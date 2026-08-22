@@ -870,6 +870,7 @@ export default function App() {
 
       {/* ── BRAIN DUMP TICKER ────────────────────────────────────────────── */}
       <div
+        className="ticker-section"
         style={{
           background: C.charcoal,
           padding: '14px 0',
