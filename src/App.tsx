@@ -107,7 +107,29 @@ function SectionLabel({ label, color = C.rose }: { label: string; color?: string
     </div>
   )
 }
-
+function Subheading({ label, color = C.rose }: { label: string; color?: string }) {
+  return (
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        marginBottom: '14px',
+      }}
+    >
+      <span
+        style={{
+          fontFamily: '"DM Mono", monospace',
+          fontSize: '10px',
+          letterSpacing: '0.1em',
+          textTransform: 'uppercase',
+          color,
+        }}
+      >
+        {label}
+      </span>
+    </div>
+  )
+}
 function ProjectCard({
   title,
   period,
@@ -1131,8 +1153,8 @@ export default function App() {
             >
               engineer by degree,
               <br />
-              <span style={{ color: C.sage }}>curious by nature.</span>
-              <SectionLabel label="(almost by degree)" color={C.rose} />
+              <span style={{ color: C.sage }}>curious by nature.{' '}</span>
+              <Subheading label="(almost by degree)" color={C.rose} />
             </h2>
 
             <p
