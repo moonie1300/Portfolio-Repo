@@ -290,7 +290,7 @@ export default function App() {
           left: 0,
           right: 0,
           zIndex: 200,
-          padding: '18px 48px',
+          padding: '18px 24px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -317,7 +317,11 @@ export default function App() {
           hj.
         </button>
 
-        <div style={{ display: 'flex', gap: '36px', alignItems: 'center' }}>
+        {/* Desktop Nav */}
+        <div
+          className="desktop-nav"
+          style={{ display: 'flex', gap: '36px', alignItems: 'center' }}
+        >
           {navLinks.map((s) => (
             <button
               key={s}
@@ -360,7 +364,115 @@ export default function App() {
             Say hello
           </a>
         </div>
+
+        {/* Hamburger Menu Button */}
+        <button
+          className="mobile-menu-btn"
+          onClick={() => setMenuOpen(!menuOpen)}
+          style={{
+            display: 'none',
+            flexDirection: 'column',
+            gap: '5px',
+            background: 'none',
+            border: 'none',
+            cursor: 'pointer',
+            padding: '8px',
+          }}
+          aria-label="Toggle menu"
+        >
+          <div
+            style={{
+              width: '24px',
+              height: '2px',
+              background: C.charcoal,
+              transition: 'transform 0.3s, opacity 0.3s',
+              transform: menuOpen ? 'rotate(45deg) translateY(7px)' : 'none',
+            }}
+          />
+          <div
+            style={{
+              width: '24px',
+              height: '2px',
+              background: C.charcoal,
+              transition: 'opacity 0.3s',
+              opacity: menuOpen ? 0 : 1,
+            }}
+          />
+          <div
+            style={{
+              width: '24px',
+              height: '2px',
+              background: C.charcoal,
+              transition: 'transform 0.3s',
+              transform: menuOpen ? 'rotate(-45deg) translateY(-7px)' : 'none',
+            }}
+          />
+        </button>
       </nav>
+
+      {/* Mobile Menu Dropdown */}
+      <div
+        className="mobile-menu"
+        style={{
+          position: 'fixed',
+          top: '60px',
+          left: 0,
+          right: 0,
+          zIndex: 199,
+          background: `${C.parchment}f8`,
+          backdropFilter: 'blur(10px)',
+          borderBottom: `1px solid ${C.blush}80`,
+          maxHeight: menuOpen ? '400px' : '0',
+          overflow: 'hidden',
+          transition: 'max-height 0.3s ease',
+          display: 'flex',
+          flexDirection: 'column',
+          padding: menuOpen ? '20px 24px' : '0 24px',
+        }}
+      >
+        {navLinks.map((s) => (
+          <button
+            key={s}
+            onClick={() => scrollTo(s)}
+            style={{
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              fontFamily: '"DM Mono", monospace',
+              fontSize: '11px',
+              letterSpacing: '0.1em',
+              textTransform: 'uppercase',
+              color: C.muted,
+              padding: '14px 0',
+              textAlign: 'left',
+              borderBottom: `1px solid ${C.blush}40`,
+              transition: 'color 0.2s',
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = C.charcoal)}
+            onMouseLeave={(e) => (e.currentTarget.style.color = C.muted)}
+          >
+            {s}
+          </button>
+        ))}
+        <a
+          href="mailto:hannahej02@gmail.com"
+          style={{
+            fontFamily: '"DM Mono", monospace',
+            fontSize: '11px',
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            textDecoration: 'none',
+            color: C.cream,
+            background: C.charcoal,
+            padding: '12px 18px',
+            borderRadius: '2px',
+            textAlign: 'center',
+            marginTop: '16px',
+          }}
+        >
+          Say hello
+        </a>
+      </div>
 
       {/* ── HERO ────────────────────────────────────────────────────────── */}
       <section

@@ -51,7 +51,22 @@ body {
   animation: float 4s ease-in-out infinite;
 }
 
+/* Hide mobile menu on desktop */
+@media (min-width: 901px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
 @media (max-width: 900px) {
+  /* Navigation */
+  .desktop-nav {
+    display: none !important;
+  }
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+  
   .hero-inner {
     padding-right: 8% !important;
     padding-top: 120px !important;
